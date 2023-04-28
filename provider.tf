@@ -11,5 +11,10 @@ terraform {
   }
 }
 
+provider "google" {
+  project = var.project
+  region  = var.region
+  zone    = var.zone
+}
 
 # install gcloud cli : https://cloud.google.com/sdk/docs/install
